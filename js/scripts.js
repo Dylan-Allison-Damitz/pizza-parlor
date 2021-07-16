@@ -1,3 +1,5 @@
+// Business Logic
+
 function Pizza() {
   this.toppings = {};
   this.size = {};
@@ -21,6 +23,13 @@ Pizza.prototype.totalPrice = function(size) {
   return this.price
 }
 
-  
-  
-};
+// UI Logic
+let completePizza = new Pizza (userToppings, userSize);
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    const userToppings = $("input:radio[name=toppings]:checked").val();
+    const userSize = $("input:radio[name=size]:checked").val();
+  });
+})
