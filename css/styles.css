@@ -1,0 +1,47 @@
+.bigBox {
+  width: 95%;
+  background-color: rgb(201, 214, 171);
+  border: 10px solid rgb(19, 18, 18);
+  margin: 10px;
+  padding: 10px;
+  font-family: verdana;
+  color: rgb(12, 11, 11);
+  border-radius: 10px;
+}
+
+.box1 {
+  width: 95%;
+  background-color: rgb(201, 214, 171);
+  border: 10px solid rgb(19, 18, 18);
+  margin: 10px;
+  padding: 10px;
+  font-family: verdana;
+  color: rgb(12, 11, 11);
+  border-radius: 10px;
+}
+
+.align-heading {
+  text-align: center;
+}
+
+img {
+  width: 25%;
+  height: 70%;
+  border: 5px solid rgb(10, 10, 10);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+#output {
+  font-weight: bold;
+}
+
+#output2 {
+  font-weight: bold;
+}
+
+#output3 {
+  font-weight: bold;
+}

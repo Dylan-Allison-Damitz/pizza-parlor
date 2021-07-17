@@ -9,54 +9,56 @@
 </head>
 <body>
   <div class="container">
-        <div class="align-heading">
-          <h1>Uncle Maynard's Bayou Pie</h1>
-            <h4>Welcome to Uncle Maynard's Bayou kitchen!</h4>
-              <br>
-                <h5>Please select a pie setup and size below!</h5>
-        </div>   
-          <br>
-    <form name="formOne" id="formOne">
-      <p><strong>1.) Choose a pie setup</strong></p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="Bob" checked>
-              Greasy Bob's swamp souffle
-              (Pepperoni, scrambled Gator eggs, ghost peppers, mozzarella)
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="toppings" value="Junebug">
+        <div class="bigBox">
+          <div class="align-heading">
+            <h1>Uncle Maynard's Bayou Pie</h1>
+              <img src="img/maynard's.jpg" alt="Maynard's logo">
+                <br>
+                  <h4>Welcome to Uncle Maynard's Bayou kitchen!</h4>
+                    <br>
+                      <h5>Please select a pie setup and size below!</h5></div>   
+                        <br>
+                          <form name="formOne" id="formOne">
+                            <p><strong>1.) Choose a pie setup</strong></p>
+                              <div class="radio">
+                                <label>
+                                <input type="radio" name="toppings" value="Greasy Bob's swamp souffle" checked>
+                                    Greasy Bob's swamp souffle
+                                    <i>(Pepperoni, scrambled Gator eggs, ghost peppers, mozzarella)</i> <strong>$10</strong>
+                                </label>
+                              </div>
+                              <div class="radio">
+                              <label>
+            <input type="radio" name="toppings" value="Aunt Junebug's Louisiana lizard pie">
               Aunt Junebug's Louisiana lizard pie
-              (Locally-sourced lizard parts, gouda, arugla) 
+              <i>(Locally-sourced lizard parts, gouda, arugla)</i> <strong>$12</strong>
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="toppings" value="Bocephus">
+            <input type="radio" name="toppings" value="Cousin Bocephus' Dirty Dessert Pie">
               Cousin Bocephus' Dirty Dessert Pie
-              (sugared-Anchovie, carmelized rattlesnake, Nutella crust)
+              <i>(sugared-Anchovie, carmelized rattlesnake, Nutella crust)</i> <strong>$15</strong>
         </label>
       </div>
       <br>
       <p><strong>2.) Choose a size</strong></p>
         <div class="radio">
           <label>
-            <input type="radio" name="size" value="Children" checked>
-            Children's (20")
+            <input type="radio" name="size" value="Children's" checked>
+            Children's <i>(20")</i> <strong>$23</strong>
           </label>
         </div>
       <div class="radio">
         <label>
           <input type="radio" name="size" value="Personal">
-            Personal (36")
+            Personal <i>(36")</i> <strong>$28</strong>
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="size" value="DateNight">
-            Date Night (100")
+          <input type="radio" name="size" value="Date Night">
+            Date Night <i>(100")</i> <strong>$50</strong>
             *Please bring your own truck, cannot deliver!
         </label>
       </div>
@@ -66,10 +68,20 @@
     </form>
       </div>
         </div>
+          </div>
         <br>
+      
         <div class="container">
-        Total Cost: $<span id="output"></span>
-                      <span id="output2"></span>
+          <div class="box1">
+            ORDER DETAILS:
+            <br>
+            -Total Cost: $<span id="output"></span>
+            <br>
+            -Pie Size: <span id="output2"></span>
+            <br>
+            -Pie Setup: <span id="output3"></span>
         </div>
+          </div>
+          
 </body>
 </html>

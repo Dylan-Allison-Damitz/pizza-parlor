@@ -6,21 +6,21 @@ function Pizza(size, toppings) {
   this.price = 0;
 };
 
-Pizza.prototype.sizePrice = function(size) {
-    if(this.size == "Children") {
-      this.price +=12;
-    } else if(this.size == "Personal") {
-      this.price +=20;
-    } else if(this.size == "DateNight") {
-      this.price +=50;
+Pizza.prototype.userPrice = function(size, toppings) {
+    if(this.size === "Children's") {
+      this.price += 23;
+    } else if(this.size === "Personal") {
+      this.price += 28;
+    } else if(this.size ==="Date Night") {
+      this.price += 50;
     }
     
-    if(this.toppings == "Bob") {
-      this.price += 3;
-    } else if(this.toppings == "Junebug") {
-      this.price +=3;
-    } else if(this.toppings == "Bocephus") {
-      this.price += 7;
+    if(this.toppings === "Greasy Bob's swamp souffle") {
+      this.price += 10;
+    } else if(this.toppings === "Aunt Junebug's Louisiana lizard pie") {
+      this.price += 12;
+    } else if(this.toppings === "Cousin Bocephus' Dirty Dessert Pie") {
+      this.price += 15;
     };
   return this.price;
 };
@@ -32,10 +32,10 @@ $(document).ready(function() {
     event.preventDefault();
     let userSize = $("input:radio[name=size]:checked").val();
     let userToppings = $("input:radio[name=toppings]:checked").val();
-    
     const userPizza = new Pizza(userSize, userToppings);
-    userPizza.sizePrice()
-    $("#output").text(userPizza.sizePrice());
+    $("#output").text(userPizza.userPrice());
+    $("#output2").text($("input:radio[name=size]:checked").val());
+    $("#output3").text($("input:radio[name=toppings]:checked").val());
   });
 });
 
