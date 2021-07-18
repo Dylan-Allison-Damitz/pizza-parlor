@@ -6,7 +6,7 @@ function Pizza(size, toppings) {
   this.price = 0;
 };
 
-Pizza.prototype.userPrice = function(size, toppings) {
+Pizza.prototype.userPrice = function() {
     if(this.size === "Children's") {
       this.price += 23;
     } else if(this.size === "Personal") {
