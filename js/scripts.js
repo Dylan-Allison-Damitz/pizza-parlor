@@ -11,7 +11,7 @@ Pizza.prototype.userPrice = function(size, toppings) {
       this.price += 23;
     } else if(this.size === "Personal") {
       this.price += 28;
-    } else if(this.size ==="Date Night") {
+    } else if(this.size === "Date Night") {
       this.price += 50;
     }
     
@@ -28,7 +28,7 @@ Pizza.prototype.userPrice = function(size, toppings) {
 // UI Logic
 
 $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
+  $("form#orderPie").submit(function(event) {
     event.preventDefault();
     let userSize = $("input:radio[name=size]:checked").val();
     let userToppings = $("input:radio[name=toppings]:checked").val();
@@ -38,5 +38,3 @@ $(document).ready(function() {
     $("#output3").text($("input:radio[name=toppings]:checked").val());
   });
 });
-
-    
